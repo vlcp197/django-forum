@@ -20,5 +20,5 @@ from boards import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^homepage$', views.home, name='home'),
+    re_path(r'^$', views.home, name='home'),
 ]
