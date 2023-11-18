@@ -20,6 +20,7 @@ class Topic(models.Model):
         Board, related_name='topics', on_delete=models.CASCADE)
     starter = models.ForeignKey(
         User, related_name='topics', on_delete=models.CASCADE)
+    last_updated = models.DateTimeField(auto_now_add=True)
 
 
 class Post(models.Model):
